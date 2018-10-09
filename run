@@ -1,0 +1,20 @@
+#!/bin/sh
+
+BASEDIR=$(dirname "$0")
+clear
+echo "Initialising GridLock"
+cd "$BASEDIR"/bin
+java GridLock
+clear
+echo "We hope you enjoyed GridLock"
+echo "Developed for the 18s1 UNSW COMP2511 Major Project"
+echo "Group Members: {in alphabetical order}"
+echo "Zhiwei Cao - z5092283"
+echo "Jie Chen - z5080307"
+echo "Leon Den Dulk - z5160562"
+echo "Vincent Tan - z5078399"
+echo "Peter Wang - z5063199"
+echo ""
+echo ""
+echo ""
+echo "Good-Bye"

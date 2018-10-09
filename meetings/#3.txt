@@ -1,0 +1,53 @@
+Meeting #3
+
+View <- MouseListener etc / Controller
+|  ^
+v  |
+Model
+
+
+IN VIEW
+
+Listens for input
+I got an input
+Input is legitimate and has changed from the last input
+is this a win state?
+model.win?
+else 
+model.updateModel(information from input)
+
+I receive a new model/redraw request
+I redraw
+
+
+undo button
+
+
+
+
+In MODEL(BOARD)
+
+okay I have information to change the gamestate
+now I update the gamestate
+i update the counter
+i update past game states
+Now I tell the view to redraw the new gamestate
+
+
+i want to undo:
+view.updateScreen call
+
+view.updateScreen(new gamestate information)
+- why would i use this?
+- undo move
+- redo move
+
+view.monitorWin
+- does the received state from view match our win state
+
+
+
+
+
+
+

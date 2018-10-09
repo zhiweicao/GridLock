@@ -1,0 +1,26 @@
+#!/bin/sh
+
+clear
+echo "Compiling..."
+
+BASEDIR=$(dirname "$0")
+
+echo "Purging cache"
+rm -rf "$BASEDIR"/bin
+echo "Refreshing build"
+mkdir "$BASEDIR"/bin
+
+cp -r "$BASEDIR"/src/maps "$BASEDIR"/bin
+cp -r "$BASEDIR"/src/sprites "$BASEDIR"/bin
+
+find "$BASEDIR"/src -name "*.java" > "$BASEDIR"/sources.txt
+cd "$BASEDIR"
+javac -d "$BASEDIR"/bin @sources.txt
+
+echo "."
+echo "."
+echo "."
+echo "."
+echo "."
+echo "Compile Successful"
+echo "Run game using command - run"

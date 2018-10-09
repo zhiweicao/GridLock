@@ -1,0 +1,140 @@
+Meeting #2 - 21/4
+UML - Game
+
+To get to the UML Diagram go to:
+https://www.lucidchart.com/documents/edit/ae735257-ca25-45b0-a236-3b6937bd2a78/0
+
+UML Layout as below:
+
+MAIN - System Class 
+|
+|---> board ---> block -> player (properties)
+|											 -> obstacle (properties)
+|						
+|
+|---> screen ---> game
+|						 ---> tutorial
+|            ---> settings
+|						 ---> menu
+|
+|
+|---> InputListener - mouseEvents 
+
+
+
+
+Descriptions / Methods & Statics
+
+main {
+ScreenHandler
+backend.GameState (MENU, PLAYING, GAME_ENDED)
+------------
+startGame method
+updateGame method
+tutorialGame method
+gameState
+}
+
+
+board (given board, given placement of cars) {
+i know to start the board
+i know how to draw a board
+i know where to place the cars
+
+}
+
+
+
+player {
+colour/sprite
+direction point
+size
+location block1
+location block2
+
+}
+
+
+
+
+
+
+
+gamestate
+programstate
+
+program records where in the program you are
+gamestate records locations of characters
+
+
+[BLOCK][BLOCK][]
+[][][PLAYER]
+[][][]
+
+This is to get the last moves: -
+
+
+backend.Player {
+  
+  LinkedList LastMoves (LinkedList moves) {
+  gs1 -> gs2 -> gs3 -> gs4
+  }
+}
+
+
+MouseEvents -> clicked on this array -> player or obstacle (obstacle which obstacle) -> board
+
+000000
+000000
+000000
+000000
+000000
+000000
+
+->
+
+000020
+000020
+000020
+011100
+000000
+003330
+
+2 = PLAYER
+
+addMouseMotionListener(new MouseMotionAdapter() {
+on click - take original x y
+on release - take final x y
+
+pass both to the main
+main figures out who did what
+main updates game
+
+board & player etc draw locations
+
+
+MouseEvents
+|
+|
+|
+main 
+|
+|
+|
+board (given board, given placement of cars) {
+i know to start the board
+i know how to draw a board
+i know where to place the cars
+
+}
+
+
+
+player {
+colour/sprite
+direction point
+size
+location block1
+location block2
+
+}

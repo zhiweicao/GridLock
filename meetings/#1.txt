@@ -1,0 +1,79 @@
+Meeting on codeshare.io [https://codeshare.io/24p70d] and Discord - 14/4
+
+who are the intended users: are they novice, intermediate or expert, 
+or all sorts of users (do we even understand what this means?)
+- difficulty suits all users
+- game will be playable as easy, normal, hard
+- do this by:
+	- less/more cars
+  - moving cars
+  - size of board
+  - limit moves
+  	- < 10 moves - gold star
+    - < 20 moves - silver
+    - < 30 moves - bronze
+
+
+what sort of features are basic to the application (i.e. needed by every user)?
+- UI design
+	- menu
+  - move counter
+  - undo
+  - reset
+  - difficulty
+  - "nice" sprites i.e. cars etc
+	- next level/ restart level button
+- "random" algorithm to produce map
+- tutorial
+
+
+what sort of features are needed by different categories of users: 
+how can the interface handle seemingly different requirements?
+- move counter
+	- easy: no counter
+  - normal: counter + time counter
+  - hard: 
+  	- time attack
+    - optimal -> less than (optimal path + 5)
+- hints for different levels
+- puzzle complexity (size etc)
+
+
+what sort of help or hints (if any) should the system be able to 
+provide to users (and how and when is this help given)?
+- log moves from solving algo, or solve from where the cars are
+- use this to provide hints on next move
+- no hints on advanced levels
+- penalties for hints on normal + advanced
+- max hints?
+- colorblind - accessibility
+
+
+what platforms with what form factors is the system designed to run on?
+- java
+- test on linux, mac, windows,
+
+
+
+Story Points:
+
+- Get to MVP (minimum valid product)
+	Sprint 1
+  	- As a user, I want to be able to start the program, and get to a menu.
+    - As a user, I want to be able to start a game.
+    - As a user, I want to play a game.
+    - As a user, I want to be able to go through a tutorial.
+    - As a user, I want to be able to track my moves.
+		- As a user, I want to move blocks.
+    - As a user, I want to win the game.
+    - As a user, I want cool blocks for cars. 
+		- As a user, I want pre-defined maps
+
+
+
+Later Sprints:
+	- As a user, I want to see randomized maps
+	- As a user, I want to be able to change difficulty
+  - As a user, I want to be able to get hints.   
+  - As an intermediate user I want to be able to play more challenging puzzles.
+  - As a advanced user, I want to be able to play the most advanced puzzles
