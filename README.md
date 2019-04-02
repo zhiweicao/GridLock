@@ -30,3 +30,4 @@ Make sure you read this before beginning any work.
 * Discord & FB Messenger seem to be the best ways to keep in contact.
 * Ensure that you visit the BitBucket page every few days or so.
 * Advised to set up notifications in BitBucket to keep track.
+[![996.ICU](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) 
